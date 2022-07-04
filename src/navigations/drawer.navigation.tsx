@@ -1,6 +1,6 @@
 import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
-import { ChatScreen, PerfilScreen } from "../screens";
+import { ChatScreen} from "../screens";
 import colors from "../styles/colors";
 import { Ionicons } from "@expo/vector-icons";
 
@@ -18,15 +18,6 @@ export default function DrawerNavigation() {
         drawerInactiveTintColor: colors.white,
       }}
     >
-      <Drawer.Screen
-        name="Perfil"
-        component={PerfilScreen}
-        options={{
-          drawerIcon: () => (
-            <Ionicons name="person" size={24} color={colors.white} />
-          ),
-        }}
-      />
       <Drawer.Screen
         name="Chat"
         component={ChatScreen}

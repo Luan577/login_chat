@@ -15,9 +15,6 @@ export default function Login({ navigation }: LoginTypes) {
   async function handleSignIn() {
     navigation.navigate("Drawer");
   }
-  function handleCadastrar() {
-    navigation.navigate("Cadastrar");
-  }
 
   return (
     <View style={styles.container}>
@@ -46,11 +43,6 @@ export default function Login({ navigation }: LoginTypes) {
             />
           </View>
           <Button title="Login" type="primary" onPress={handleSignIn} />
-          <Button
-            title="Cadastre-se"
-            type="secondary"
-            onPress={handleCadastrar}
-          />
         </KeyboardAvoidingView>
       </ImageBackground>
     </View>
